@@ -19,14 +19,20 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="btn-abrir-modal">Ingresar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="btn-abrir-modal-registro">Registrarse</a>
-                </li>
+                <!-- Mostrar elementos solo si el usuario está autenticado -->
+                @if (auth()->check())
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('Cerrar.Sesion') }}">Cerrar Sesión</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="btn-abrir-modal">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="btn-abrir-modal-registro">Registrarse</a>
+                    </li>
+                @endif
             </ul>
         </div>
     </div>
 </nav>
-

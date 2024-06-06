@@ -1,4 +1,8 @@
-/* MODAL LOGIN */
+MODAL LOGIN
+#modal-registro::backdrop{
+    background-color: rgba(145, 0, 0, 0.55);
+}
+
 #modal::backdrop, #modal-registro::backdrop{
     background-color: rgba(0, 0, 0,.55);
 }
@@ -9,7 +13,7 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    
+
 }
 
 .logoCreArt{

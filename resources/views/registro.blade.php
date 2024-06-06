@@ -2,33 +2,63 @@
     <button id="btn-cerrar-modal-registro" class="botonCerrar">X</button><br>
     <img src="img/LogoCreart.png" class="logoCreArt">
     <h2>Te damos la bienvenida a CreArt</h2>
-    <form>
+    <form action="{{ route('Registro.Usuario') }}" method="POST">
+        @csrf
         <div class="mb-4">
             <div>
                 <label for="" class="form-label">Nombre Completo</label>
-                <input type="text" class="form-control" placeholder="Nombre Completo">
+                <input type="text" class="form-control @error('Nombre') is-invalid @enderror"
+                    placeholder="Nombre Completo" name="Nombre">
+                @error('Nombre')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
             <div>
                 <label for="" class="form-label">Celular</label>
-                <input type="text" class="form-control" placeholder="Correo">
+                <input type="number" class="form-control @error('Celular') is-invalid @enderror" placeholder="Celular"
+                    name="Celular">
+                @error('Celular')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
             <div>
                 <label for="" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" placeholder="Celular">
+                <input type="email" class="form-control @error('Correo') is-invalid @enderror" placeholder="Correo"
+                    name="Correo">
+                @error('Correo')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
             <div>
                 <label for="" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" placeholder="Contraseña">
+                <input type="password" class="form-control @error('password') is-invalid @enderror"
+                    placeholder="Contraseña" name="password">
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
             <div>
                 <label for="" class="form-label">Fecha de nacimiento</label>
-                <input type="date" class="form-control">
+                <input type="date" class="form-control @error('Nacimiento') is-invalid @enderror" name="Nacimiento">
+                @error('Nacimiento')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
             <div class="botones">
-                <button class="registrar">Registrarme</button><br>
+                <button class="registrar" type="submit">Registrarme</button><br>
                 <a href="">Ya tengo una cuenta</a>
             </div>
         </div>
     </form>
-    
+
 </dialog>
