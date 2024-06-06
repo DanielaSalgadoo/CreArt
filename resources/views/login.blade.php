@@ -1,4 +1,4 @@
-<dialog open id="modal">
+<dialog id="modal">
     <button id="btn-cerrar-modal" class="botonCerrar">X</button><br>
     <div class="Logoh2">
         <img src="img/LogoCreart.png" class="logoCreArt">
