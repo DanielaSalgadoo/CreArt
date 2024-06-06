@@ -1,4 +1,8 @@
-/* MODAL LOGIN */
+MODAL LOGIN
+#modal-registro::backdrop{
+    background-color: rgba(145, 0, 0, 0.55);
+}
+
 #modal::backdrop, #modal-registro::backdrop{
     background-color: rgba(0, 0, 0,.55);
 }
@@ -78,7 +82,7 @@
 }
 
 .botonCerrar:hover{
-    background-color: red;
+    background-color: #8600f3b2;
     color: #fff;
 }
 
@@ -107,4 +111,5 @@
     border-radius: 17px;
     margin-top: 10px;
 }
+
 
