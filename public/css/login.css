@@ -3,19 +3,32 @@
     background-color: rgba(0, 0, 0,.55);
 }
 
-#modal, #modal-registro{
+#modal {
     width: 500px;
-    height: auto;
+    height: 550px;
     background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    
+    border-radius: 60px;
+    padding: 30px;
+    border-style: none;
+    overflow: hidden;
+}
+.Logoh2{
+    text-align: center;
+}
+
+.Logoh2 h2{
+    font-size: 27px;
+    font-weight: bold;
 }
 
 .logoCreArt{
     width: 50px;
     height: 50px;
-    margin-left: 150px;
+}
+
+.formulario-login{
+    margin: 40px;
+    padding-top: 10px;
 }
 
 .botones{
@@ -24,26 +37,74 @@
 }
 
 .iniciar-sesion{
+    width: 280px;
+    height: 40px;
     background-color: #8600f3;
+    color: white;
     border-style: none;
-    border-radius: 10px;
-    padding: 6px;
+    border-radius: 17px;
+    margin-top: 10px;
+}
 
+.iniciar-sesion:hover{
+    background-color: #8600f3b2;
+    color: #fff;
 }
 
 .registrarse{
+    width: 280px;
+    height: 40px;
     background-color: #8600f3;
+    color: white;
     border-style: none;
-    border-radius: 10px;
-    padding: 6px;
+    border-radius: 17px;
     margin-top: 10px;
 
 }
+.registrarse:hover{
+    background-color: #8600f3b2;
+    color: #fff;
+}
 
 .botonCerrar{
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    margin-left: 420px;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-left: 405px;
     size: 10px;
+    background-color: #8600f3;
+    color: white;
+    border-style: none;
 }
+
+.botonCerrar:hover{
+    background-color: red;
+    color: #fff;
+}
+
+/* MODAL REGISTRO */
+#modal-registro{
+    width: 500px;
+    height: 650px;
+    background-color: #fff;
+    border-radius: 60px;
+    padding: 20px;
+    border-style: none;
+    overflow: hidden;
+}
+
+.formulario-registro{
+    margin: 35px;
+    font-size: 15px;
+}
+
+.registrar{
+    width: 280px;
+    height: 40px;
+    background-color: #8600f3;
+    color: white;
+    border-style: none;
+    border-radius: 17px;
+    margin-top: 10px;
+}
+

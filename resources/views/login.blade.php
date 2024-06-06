@@ -1,9 +1,11 @@
-<dialog id="modal">
+<dialog open id="modal">
     <button id="btn-cerrar-modal" class="botonCerrar">X</button><br>
-    <img src="img/LogoCreart.png" class="logoCreArt">
-    <h2>Te damos la bienvenida a CreArt</h2>
-    <form>
-        <div class="mb-3">
+    <div class="Logoh2">
+        <img src="img/LogoCreart.png" class="logoCreArt">
+        <h2>Te damos la bienvenida a CreArt</h2>
+    </div>
+    <form class="formulario-login">
+        <div>
             <div>
                 <label for="" class="form-label">Correo electrónico</label>
                 <input type="text" class="form-control" placeholder="Correo">
@@ -15,7 +17,7 @@
             <div class="botones">
                 <a href="">¿Olvidaste tu contraseña?</a><br>
                 <button class="iniciar-sesion">Iniciar Sesión</button><br>
-                <button class="registrarse">Registrarse</button>
+                <button class="registrarse">Regístrate</button>
             </div>
         </div>
     </form>
