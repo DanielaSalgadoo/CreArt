@@ -3,23 +3,27 @@
 use App\Http\Controllers\Auth\RegistroController;
 use App\Http\Controllers\Auth\SesionController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
-
-// Route::post('/login', [LoginController::class, 'login']);
-// Route::get('/logout', [LoginController::class, 'logout']);
-// Route::get('/register', [LoginController::class,'register']);
-
-// Route::get('/home', [LoginController::class, 'home']);
-// Route::get('/profile', [LoginController::class, 'profile']);
-// Route::get('/edit', [LoginController::class, 'edit']);
-// Route::post('/edit', [LoginController::class, 'update']);
-// Route::get('/delete', [LoginController::class, 'delete']);
-// Route::post('/delete', [LoginController::class, 'destroy']);
-
+use Symfony\Component\HttpFoundation\Session\Storage\Handler\IdentityMarshaller;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
+
+// Ruta para La vista Perfil
+Route::get('/perfil', function () {
+    return view('perfil');
+    
+})->name('perfil');
+
+// Ruta para La vista Creados en perfil
+Route::get('/ideasCreadas', function(){
+    return view('ideasCreadas');
+})->name('ideasCreadas');
+
+// Ruta para La vista Guardados en Perfil
+Route::get('/ideasGuardadas', function() {
+    return view('ideasGuardadas');
+})->name('ideasGuardadas');
 
 // Ruta para el Controlador de Registro
 Route::post('Registro/Usuario', [RegistroController::class, 'Registro'])

@@ -1,0 +1,100 @@
+.orden-total{
+    margin: 20px;
+}
+
+
+.logo-items{
+    text-align: center;
+    padding: 10px;
+
+}
+
+.logo-usuario{
+    width: 220px;
+    height: 130px;
+}
+
+.nombre-usuario{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.botones-perfil{
+    width: 110px;
+    height: 50px;
+    margin-top: 10px;
+    border-style: none;
+    background: #e0e0e0;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.botones-perfil:hover{
+    background-color: #c2c1c1;
+}
+
+.botones-nav {
+    display: inline-block;
+    width: 90px;
+    height: 45px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px; /* Algo similar a margin-top */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Ayuda a cambiar el color de los links al predeterminado */
+}
+
+.botones-nav:hover {
+    background-color: #e4e4e4;
+}
+
+.botones-nav:focus {
+    box-shadow: 0 3px #000000;
+}
+
+
+
+.creados{
+    text-align: center;
+    margin-top: 30px;
+}
+.crear-idea{
+    width: 120px;
+    height: 40px;
+    background-color: #8600f3;
+    color: white;
+    border-style: none;
+    border-radius: 17px;
+    margin-top: 5px;
+}
+
+.crear-idea:hover{
+    background-color: #6600cc;
+}
+
+.guardados{
+    text-align: center;
+    margin-top: 70px;
+}
+.guardar-idea{
+    width: 120px;
+    height: 50px;
+    margin-top: 1px;
+    border-style: none;
+    background: #e0e0e0;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.guardar-idea:hover{
+    background-color: #c2c1c1;
+}
