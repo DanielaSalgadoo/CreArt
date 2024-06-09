@@ -29,13 +29,13 @@
                 <button class="btn btn-outline-success" type="submit">Search</button> --}}
                 </form>
                 <div class="iconos">
-                    <a href="{{route('ideasGuardadas')}}"><i class="fa-regular fa-circle-user fa-2xl" style="color: #8600f3;"></i></a>
+                    <a href="{{ route('perfil') }}"><i class="fa-regular fa-circle-user fa-2xl" style="color: #8600f3;"></i></a>
                     <i class="fa-solid fa-bell fa-xl"></i>
                     <button class="btn fa-solid fa-chevron-down fa-lg" type="button" data-bs-toggle="dropdown"
                         data-bs-auto-close="true" aria-expanded="false">
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="{{ route('ideasGuardadas') }}">Perfil</a></li>
+                        <li><a class="dropdown-item" href="{{ route('perfil') }}">Perfil</a></li>
                         <li><a class="dropdown-item" href="#">Configuración</a></li>
                         <li><a class="dropdown-item" href="{{ route('Cerrar.Sesion') }}">Cerrar Sesión</a></li>
                     </ul>

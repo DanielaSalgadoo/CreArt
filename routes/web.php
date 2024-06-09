@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Auth\RegistroController;
 use App\Http\Controllers\Auth\SesionController;
+use App\Http\Controllers\PaginaPrincipal\principalController;
+use App\Http\Controllers\Usuario\PerfilController;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\Session\Storage\Handler\IdentityMarshaller;
 
@@ -10,15 +12,12 @@ Route::get('/', function () {
 })->name('index');
 
 // Ruta para La vista Perfil
-Route::get('/perfil', function () {
-    return view('perfil');
-    
-})->name('perfil');
+Route::get('/perfil', [PerfilController::class, 'VistaPerfil'])
+    ->name('perfil');
 
 // Ruta para La vista Creados en perfil
-Route::get('/ideasCreadas', function(){
-    return view('ideasCreadas');
-})->name('ideasCreadas');
+Route::get('/ideasCreadas', [PerfilController::class, 'VistaPerfil'])
+    ->name('ideasCreadas');
 
 // Ruta para La vista Guardados en Perfil
 Route::get('/ideasGuardadas', function() {
@@ -34,5 +33,6 @@ Route::post('Registro/Usuario', [RegistroController::class, 'Registro'])
 Route::post('Inicio/Sesion', [SesionController::class, 'Inicio'])
     ->name('Inicio.Sesion');
 
+// RUta para Cerrar Sesión
 Route::get('Cerrar/Sesion', [SesionController::class, 'Cerrar'])
     ->name('Cerrar.Sesion');
