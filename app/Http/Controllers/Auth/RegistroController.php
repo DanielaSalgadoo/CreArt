@@ -27,7 +27,7 @@ class RegistroController extends Controller
         $Usuario->Nombre = $request->Nombre;
         $Usuario->Celular = $request->Celular;
         $Usuario->Correo = $request->Correo;
-        $Usuario->Nacimiento = $request->Nacimiento;
+        $Usuario->Fecha_Nacimiento = $request->Nacimiento;
         $Usuario->password = $request->password;
 
         //Guardar Usuario

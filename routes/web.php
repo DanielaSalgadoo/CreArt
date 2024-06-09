@@ -20,9 +20,14 @@ Route::get('/ideasCreadas', [PerfilController::class, 'VistaPerfil'])
     ->name('ideasCreadas');
 
 // Ruta para La vista Guardados en Perfil
-Route::get('/ideasGuardadas', function() {
-    return view('ideasGuardadas');
+Route::get('/ideasGuardadas', function () {
+    return view('Perfil/ideasGuardadas');
 })->name('ideasGuardadas');
+
+// Ruta para La vista Editar Perfil
+Route::get("/editarPerfil", function () {
+    return view('Perfil/editarPerfil');
+})->name('editarPerfil');
 
 // Ruta para el Controlador de Registro
 Route::post('Registro/Usuario', [RegistroController::class, 'Registro'])

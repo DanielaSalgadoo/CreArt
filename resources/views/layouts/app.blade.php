@@ -11,12 +11,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="{{ asset('css/perfil.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/editarPerfil.css') }}" rel="stylesheet">
 </head>
 
 <body>
     @include('header')
 
-    <div class="container mt-5">
+    <div class="container mt-2">
         @yield('content')
     </div>
 
