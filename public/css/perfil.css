@@ -16,7 +16,6 @@
 
 .nombre-usuario{
     font-size: 40px;
-    margin-top: 20px;
 }
 
 .botones-perfil{
@@ -59,12 +58,11 @@
     box-shadow: 0 3px #000000;
 }
 
-
-
 .creados{
     text-align: center;
     margin-top: 30px;
 }
+
 .crear-idea{
     width: 120px;
     height: 40px;
