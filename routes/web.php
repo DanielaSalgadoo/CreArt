@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Auth\RegistroController;
 use App\Http\Controllers\Auth\SesionController;
-use App\Http\Controllers\PaginaPrincipal\principalController;
 use App\Http\Controllers\Usuario\PerfilController;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\Session\Storage\Handler\IdentityMarshaller;
@@ -16,18 +15,16 @@ Route::get('/perfil', [PerfilController::class, 'VistaPerfil'])
     ->name('perfil');
 
 // Ruta para La vista Creados en perfil
-Route::get('/ideasCreadas', [PerfilController::class, 'VistaPerfil'])
+Route::get('/ideasCreadas', [PerfilController::class, 'IdeasCreadas'])
     ->name('ideasCreadas');
 
 // Ruta para La vista Guardados en Perfil
-Route::get('/ideasGuardadas', function () {
-    return view('Perfil/ideasGuardadas');
-})->name('ideasGuardadas');
+Route::get('/ideasGuardadas', [PerfilController::class, 'IdeasGuardadas'])
+    ->name('ideasGuardadas');
 
 // Ruta para La vista Editar Perfil
-Route::get("/editarPerfil", function () {
-    return view('Perfil/editarPerfil');
-})->name('editarPerfil');
+Route::get("/editarPerfil", [PerfilController::class, 'EditarPerfil'])
+    ->name('editarPerfil');
 
 // Ruta para el Controlador de Registro
 Route::post('Registro/Usuario', [RegistroController::class, 'Registro'])

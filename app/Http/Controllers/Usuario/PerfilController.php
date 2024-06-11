@@ -13,4 +13,23 @@ class PerfilController extends Controller
 
         return view('Perfil/perfil', compact('Perfil'));
     }
+
+    public function EditarPerfil()
+    {
+        return view('Perfil.editarPerfil');
+    }
+
+    public function IdeasCreadas()
+    {
+        $Usuario = auth()->user();
+
+        return view('Perfil/ideasCreadas', compact('Usuario'));
+    }
+
+    public function IdeasGuardadas()
+    {
+        $Usuario = auth()->user();
+
+        return view('Perfil/ideasGuardadas', compact('Usuario'));
+    }
 }
