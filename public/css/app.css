@@ -118,8 +118,6 @@ footer .fab {
     font-size: 1.1rem;
 }
 
-/* yo */
-
-img {
+.container-fluid img {
     width: 5%;
 }

@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
-
 @section('content')
     <div class="orden-total">
         <div class="logo-items">

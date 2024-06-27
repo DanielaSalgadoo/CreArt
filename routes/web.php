@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\RegistroController;
 use App\Http\Controllers\Auth\SesionController;
+use App\Http\Controllers\Idea\ideaController;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\Session\Storage\Handler\IdentityMarshaller;
 
@@ -27,8 +28,12 @@ Route::get('/ideasGuardadas', function() {
 
  // Ruta para La vista Editar Perfil
  Route::get("/editarPerfil", function(){
-    return view('Perfil/editarPerfil');
+    return view('Perfil/EditarPerfil/editarPerfil');
  })->name('editarPerfil');
+
+// Ruta para La vista Crear Idea
+Route::get('Idea/crearIdea',[ideaController::class, 'idea'])
+    ->name('crearIdea');
 
 // Ruta para el Controlador de Registro
 Route::post('Registro/Usuario', [RegistroController::class, 'Registro'])

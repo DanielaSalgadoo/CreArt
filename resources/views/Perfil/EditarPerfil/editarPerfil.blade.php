@@ -1,14 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
-
 @section('content')
     <div class="content-perfil">
         <div class="btns-editar">
             <a href="" class="btns-editarPerfil">Editar perfil</a>
             <a href="" class="btns-editarPerfil">Administración de la cuenta</a>
             <a href="" class="btns-editarPerfil">Visibilidad del perfil</a>
-            <a href="" class="btns-editarPerfil">Seguridad</a>
+            <a href="" class="btns-editarPerfil">Mejora tu feed de inicio</a>
         </div>
         <div class="content-editarPerfil">
             <h2 class="tituloEditar">Editar perfil</h1>
@@ -19,9 +17,9 @@
                 <button>Cambiar</button>
                 <form action="" class="formulario-perfil">
                     <div class="content">
-                            <label for="">Nombre</label>
+                            <label for="">Nombre(s)</label>
                             <input type="text">
-                            <label for="">Apellido</label>
+                            <label for="">Apellido(s)</label>
                             <input type="text">
                         <label for="">Información</label>
                         <input type="text" placeholder="Cuenta tu historia">
@@ -29,7 +27,7 @@
                         <input type="text">
                     </div>
                 </form>
-                <button>Guardar</button>
+                <button id="abrirCarpeta">Guardar</button>
         </div>
 
     @endsection

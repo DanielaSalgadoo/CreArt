@@ -58,9 +58,8 @@
             </div>
             <div class="botones">
                 <button class="registrar" type="submit">Registrarme</button><br>
-                <a href="">Ya tengo una cuenta</a>
+                <a href="#" id="btn-abrir-modal" class="nav-link">Ya tengo una cuenta</a>
             </div>
         </div>
     </form>
-
 </dialog>

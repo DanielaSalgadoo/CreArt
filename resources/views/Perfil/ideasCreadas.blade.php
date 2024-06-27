@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
-
 @section('content')
     <div class="orden-total">
         <div class="logo-items">
@@ -16,6 +14,6 @@
     </div>
     <div class="creados">
         <p>Aún no hay nada para mostrar. Las ideas que crees se almacenarán aquí.</p>
-        <button class="crear-idea">Crear Idea</button>
+        <a href="{{route('crearIdea')}}"><button class="crear-idea">Crear Idea</button></a>
     </div>
 @endsection
